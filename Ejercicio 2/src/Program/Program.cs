@@ -12,7 +12,7 @@ namespace Program
             Doctor andrea = new Doctor("Andrea Boncialli", "Cardiologa");
 
             Appointment appointment = AppointmentService.CreateAppointment(juan, andrea, DateTime.Today, "Sede Central");
-            string appointmentResult = AppointmentService.GetAppointmentCheckString(appointment);
+            string appointmentResult = AppointmentService.GetAppointmentStatus(appointment);
             Console.WriteLine(appointmentResult);
         }
     }
